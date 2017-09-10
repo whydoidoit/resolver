@@ -1,4 +1,4 @@
-import isFunction from 'lodash/isFunction'
+var isFunction = require('lodash/isFunction')
 
 function value(value) {
     if(isFunction(value)) {
@@ -8,4 +8,4 @@ function value(value) {
     }
 }
 
-export default value
+module.exports = value
